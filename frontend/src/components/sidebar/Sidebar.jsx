@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Bookmark, Home, MessageRounded, Notifications, Person, Search, Settings } from '@mui/icons-material'
 import "./Sidebar.css";
 import CloseFriend from '../closeFriend/CloseFriend';
 import {Users} from "../../dummyData"
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../state/AuthContext';
 
 export default function Sidebar() {
     const [user, setUser] = useState({});
+    const {user: currentUser} = useContext(AuthContext);
+    console.log(user);
 
   return (
     <div className="sidebar">
@@ -36,7 +39,7 @@ export default function Sidebar() {
                 </li>
                 <li className="sidebarListItem">
                     <Person className="sidebarIcon"/>
-                    <Link to ={`/profile/hirocode`} style={{textDecoration:"none", color:"black"}}>
+                    <Link to = {`/profile/${currentUser.username}`} style={{textDecoration:"none", color:"black"}}>
                         <span className="sidebarListItemText">プロフィール</span>
                     </Link>
                 </li>

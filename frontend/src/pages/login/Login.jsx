@@ -2,6 +2,7 @@ import React, { useContext, useRef } from 'react'
 import "./Login.css"
 import { loginCall } from '../../actionCalls';
 import { AuthContext } from '../../state/AuthContext';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const email = useRef();
@@ -37,7 +38,9 @@ export default function Login() {
             <input type="password" className="loginInput" placeholder='パスワード' required minLength="6" ref={password}/>
             <button className='loginButton'>ログイン</button>
             <span className="loginForgot">パスワードを忘れた方へ</span>
-            <button className="loginRegisterButton">アカウント作成</button>
+            <Link to="/.."style={{textDecoration:"none", color:"black"}}>              
+              <button className="loginRegisterButton">アカウント作成</button>
+            </Link>
           </form>
         </div>
       </div>

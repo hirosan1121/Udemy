@@ -2,7 +2,7 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
-import Register from "./pages/refister/Register";
+import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom"
 import { AuthContext } from "./state/AuthContext";
 import { useContext } from "react";
