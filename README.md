@@ -27,7 +27,6 @@
 
 ## インデックス
 
-- [初期化](./docs/init.md)
 - [ローカルの環境構築](./docs/local-step.md)
 - [ディレクトリ構成](./docs/directly.md)
 - [API の設計](./docs/api-design.md)
