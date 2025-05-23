@@ -25,39 +25,9 @@
 
 ---
 
-## ⚙️ 環境構築手順
+## インデックス
 
-1. リポジトリをクローン
-
-   ```
-   bash
-   git clone https://github.com/hirosan1121/Udemy
-
-   ```
-
-2. サーバーの立ち上げ
-   ```
-   cd Udemy
-   cd frontend
-   npm install
-   cd Udemy
-   cd backend
-   .envファイルを作成する(.env.exampleを参照)
-   npm start
-   ```
-3. アプリケーションの立ち上げ
-   ```
-   別のbashを開く
-   cd ../frontend
-   npm start
-   ```
-
-## 📁 ディレクトリ構成
-
-  <pre> 
-  Udemy/ 
-    ├── frontend/          # フロントエンドアプリ
-    ├── backend/           # バックエンドAPI
-    ├── .env.example       # 環境変数のサンプル
-    └── README.md
-     </pre>
+- [初期化](./docs/init.md)
+- [ローカルの環境構築](./docs/local-step.md)
+- [ディレクトリ構成](./docs/directly.md)
+- [API の設計](./docs/api-design.md)
